@@ -23,7 +23,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #a2c6cd;
   --ifm-color-primary-dark: #8bbcc5;
   --ifm-color-primary-darker: #82b7c1;
@@ -36,27 +36,27 @@
 
 /* Custom styles for yet-another-react-lightbox captions */
 .yarl__slide_caption {
-  position: absolute !important;
-  bottom: 20px !important;
-  left: 20px !important;
-  right: 20px !important;
-  top: auto !important;
-  width: auto !important; /* Width determined by left/right offsets and padding */
-  transform: none !important; /* Reset any existing transforms */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  top: auto;
+  width: auto; /* Width determined by left/right offsets and padding */
+  transform: none; /* Reset any existing transforms */
 
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  color: white !important;
-  padding: 12px 16px !important;
-  border-radius: 4px !important;
-  text-align: center !important;
-  font-size: 14px !important; /* Or use var(--ifm-font-size-base) or an equivalent */
-  line-height: 1.4 !important;
-  z-index: 1001 !important; /* Ensure it's above slide content, adjust if needed relative to lightbox controls */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px; /* Or use var(--ifm-font-size-base) or an equivalent */
+  line-height: 1.4;
+  z-index: 1001; /* Ensure it's above slide content, adjust if needed relative to lightbox controls */
   pointer-events: auto; /* Or 'none' if it shouldn't capture mouse events */
 }
 
 /* Ensure the caption text itself is centered if the plugin nests text elements */
 .yarl__slide_caption_title,
 .yarl__slide_caption_description {
-  text-align: center !important;
+  text-align: center;
 }

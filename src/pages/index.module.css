@@ -11,7 +11,7 @@
 
 /* Make the heroContainer a flex container */
 .heroContainer {
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   }
 
   .heroContainer {
-    flex-direction: column !important;
+    flex-direction: column;
     text-align: center;
   }
 
