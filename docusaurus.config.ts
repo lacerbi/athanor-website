@@ -154,6 +154,15 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Sponsor on GitHub',
+              href: 'https://github.com/sponsors/lacerbi',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Luigi Acerbi. Built with Docusaurus.`,
     },

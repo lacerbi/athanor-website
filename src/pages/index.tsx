@@ -2,46 +2,61 @@
 // installation instructions, and community links. Uses 'yet-another-react-lightbox' with
 // the Captions plugin to display images with titles. Lightbox carousel padding is increased
 // to make images appear slightly smaller.
-import type { ReactNode } from 'react';
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-import athanorSnapshotImageUrl from '@site/static/img/athanor_snapshot.png';
-import athanorSnapshotApplyChangesImageUrl from '@site/static/img/athanor_snapshot_apply_changes.png';
+import type { ReactNode } from "react";
+import React from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Heading from "@theme/Heading";
+import athanorSnapshotImageUrl from "@site/static/img/athanor_snapshot.png";
+import athanorSnapshotApplyChangesImageUrl from "@site/static/img/athanor_snapshot_apply_changes.png";
+import athanorIntroImageUrl from "@site/static/img/athanor_intro.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
-function HomepageHeader() {
+function HomepageHeader({ onImageClick }: { onImageClick: () => void }) {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          The AI Workbench
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/tutorial/introduction"
-          >
-            Read Quick Tutorial
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            href="https://github.com/lacerbi/athanor"
-            style={{ marginLeft: '1rem' }}
-          >
-            View on GitHub
-          </Link>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className={clsx("container", styles.heroContainer)}>
+        <div className={styles.heroTextContainer}>
+          <Heading as="h1" className="hero__title">
+            The AI Workbench
+          </Heading>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <p className="heroDescription">
+            Integrate any AI assistant into your workflow: easily build project
+            context, safely apply file changes, no API keys needed.
+          </p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/tutorial/introduction"
+            >
+              Read Quick Tutorial
+            </Link>
+            <Link
+              className="button button--secondary button--lg"
+              href="https://github.com/lacerbi/athanor"
+              style={{ marginLeft: "1rem" }}
+            >
+              View on GitHub
+            </Link>
+          </div>
+        </div>
+        <div className={styles.heroImageContainer}>
+          <img
+            src={athanorIntroImageUrl}
+            alt="Athanor Introduction Screenshot"
+            className={`${styles.heroImage} ${styles.clickableImage}`}
+            onClick={onImageClick}
+          />
         </div>
       </div>
     </header>
@@ -54,16 +69,23 @@ export default function Home(): ReactNode {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const slides = [
-    { 
-      src: athanorSnapshotImageUrl, 
-      alt: "Athanor Interface: File explorer and prompt generation",
-      title: "Athanor's interface: File explorer (left), task management and prompt generation (right)"
+    {
+      src: athanorIntroImageUrl,
+      alt: "Athanor Introduction Screenshot",
+      title: "Athanor - Overview of the AI Workbench interface",
     },
-    { 
-      src: athanorSnapshotApplyChangesImageUrl, 
+    {
+      src: athanorSnapshotImageUrl,
+      alt: "Athanor Interface: File explorer and prompt generation",
+      title:
+        "Athanor's interface: File explorer (left), task management and prompt generation (right)",
+    },
+    {
+      src: athanorSnapshotApplyChangesImageUrl,
       alt: "Athanor Apply Changes: Review and accept/reject diffs generated using any AI chat assistant",
-      title: "'Apply Changes' panel: Review and accept/reject diffs generated using any AI chat assistant"
-    }
+      title:
+        "'Apply Changes' panel: Review and accept/reject diffs generated using any AI chat assistant",
+    },
   ];
 
   return (
@@ -71,7 +93,12 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="The AI Workbench where modern alchemists cook"
     >
-      <HomepageHeader />
+      <HomepageHeader
+        onImageClick={() => {
+          setCurrentIndex(0);
+          setOpen(true);
+        }}
+      />
       <main>
         <HomepageFeatures />
 
@@ -83,7 +110,7 @@ export default function Home(): ReactNode {
                 We built Athanor to eliminate the painful parts of working with
                 AI assistants—hunting for files, reconstructing file changes,
                 and losing control of modifications.
-              </strong>{' '}
+              </strong>{" "}
               It's a tool that makes AI-assisted development actually work:
               easily select the right context, review every change, stay in
               control—all through your existing AI subscriptions, no API keys
@@ -169,11 +196,11 @@ export default function Home(): ReactNode {
                 v18.x+)
               </div>
               <div className={styles.installationStep}>
-                <strong>1. Clone:</strong>{' '}
+                <strong>1. Clone:</strong>{" "}
                 <code>git clone https://github.com/lacerbi/athanor.git</code>
               </div>
               <div className={styles.installationStep}>
-                <strong>2. Install:</strong>{' '}
+                <strong>2. Install:</strong>{" "}
                 <code>cd athanor && npm install</code>
               </div>
               <div className={styles.installationStep}>
@@ -181,7 +208,7 @@ export default function Home(): ReactNode {
               </div>
             </div>
             <p className={styles.sectionText}>
-              For detailed installation instructions and troubleshooting,{' '}
+              For detailed installation instructions and troubleshooting,{" "}
               <Link to="/docs/tutorial/introduction">
                 check out our tutorial
               </Link>
@@ -202,14 +229,14 @@ export default function Home(): ReactNode {
               <Link
                 className="button button--primary button--lg"
                 href="https://github.com/lacerbi/athanor/issues"
-                style={{ marginRight: '1rem', marginBottom: '1rem' }}
+                style={{ marginRight: "1rem", marginBottom: "1rem" }}
               >
                 Report Bugs & Request Features
               </Link>
               <Link
                 className="button button--secondary button--lg"
                 href="https://github.com/lacerbi/athanor/discussions"
-                style={{ marginBottom: '1rem' }}
+                style={{ marginBottom: "1rem" }}
               >
                 Join Discussions
               </Link>
