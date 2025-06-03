@@ -39,7 +39,7 @@ function HomepageHeader({ onImageClick }: { onImageClick: () => void }) {
               className="button button--secondary button--lg"
               to="/docs/tutorial/introduction"
             >
-              Read Quick Tutorial
+              Read Tutorial
             </Link>
             <Link
               className="button button--secondary button--lg"
