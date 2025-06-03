@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "lacerbi", // Usually your GitHub org/user name.
-  projectName: "athanor", // Usually your repo name.
+  projectName: "athanor-website", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -44,7 +44,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/lacerbi/athanor/edit/main/website/",
+          editUrl: "https://github.com/lacerbi/athanor-website/edit/main/",
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +54,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/lacerbi/athanor/edit/main/website/",
+          editUrl: "https://github.com/lacerbi/athanor-website/edit/main/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
