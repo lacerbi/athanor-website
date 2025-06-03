@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tutorial/prompt-creation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.0">
+<title data-rh="true">Prompt Creation &amp; Refinement | Athanor - AI Workbench</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://athanor.works/img/social_card.png"><meta data-rh="true" name="twitter:image" content="https://athanor.works/img/social_card.png"><meta data-rh="true" property="og:url" content="https://athanor.works/docs/tutorial/prompt-creation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="athanor, ai, development, workflow, assistant, coding, automation"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" property="twitter:card" content="summary_large_image"><meta data-rh="true" property="twitter:title" content="Athanor - AI Workbench"><meta data-rh="true" property="twitter:description" content="Streamline your AI-assisted development workflow with smart context selection and controlled change application."><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Prompt Creation &amp; Refinement | Athanor - AI Workbench"><meta data-rh="true" name="description" content="This is one of Athanor&#x27;s core workflows. Learn how to create effective AI prompts with the right context and structure."><meta data-rh="true" property="og:description" content="This is one of Athanor&#x27;s core workflows. Learn how to create effective AI prompts with the right context and structure."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://athanor.works/docs/tutorial/prompt-creation"><link data-rh="true" rel="alternate" href="https://athanor.works/docs/tutorial/prompt-creation" hreflang="en"><link data-rh="true" rel="alternate" href="https://athanor.works/docs/tutorial/prompt-creation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Prompt Creation & Refinement","item":"https://athanor.works/docs/tutorial/prompt-creation"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Athanor - AI Workbench RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Athanor - AI Workbench Atom Feed"><link rel="stylesheet" href="/assets/css/styles.389466c9.css">
+<script src="/assets/js/runtime~main.b53b70eb.js" defer="defer"></script>
+<script src="/assets/js/main.a64f1e3b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/athanor_logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/athanor_logo.png" alt="Athanor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/athanor_logo.png" alt="Athanor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/docs/tutorial/introduction">Tutorial</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/introduction">Getting Started with Athanor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/project-setup">Project Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/navigating-interface">Navigating the Interface</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/tutorial/prompt-creation">Prompt Creation &amp; Refinement</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/applying-changes">Applying AI-Generated Changes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/preset-tasks">Preset Tasks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/other-features">Other Features</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/customizing-templates">Customizing Prompts and Tasks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/example-workflows">Example Workflows</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Prompt Creation &amp; Refinement</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>3. Prompt Creation &amp; Refinement</h1></header>
+<p>This is one of Athanor&#x27;s core workflows. Learn how to create effective AI prompts with the right context and structure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-prompt-creation-process">The Prompt Creation Process<a href="#the-prompt-creation-process" class="hash-link" aria-label="Direct link to The Prompt Creation Process" title="Direct link to The Prompt Creation Process">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-select-relevant-files">Step 1: Select Relevant Files<a href="#step-1-select-relevant-files" class="hash-link" aria-label="Direct link to Step 1: Select Relevant Files" title="Direct link to Step 1: Select Relevant Files">​</a></h3>
+<p>In the <strong>File Explorer</strong> (left panel):</p>
+<ol>
+<li><strong>Check boxes</strong> next to files and folders relevant to your task</li>
+<li><strong>Folder selection</strong> automatically includes non-hidden descendants</li>
+<li><strong>Multi-select</strong> allows you to choose files from different directories</li>
+</ol>
+<p><strong>Selection Strategy Tips:</strong></p>
+<ul>
+<li>Include files you want to modify</li>
+<li>Add related files for context (interfaces, types, configurations)</li>
+<li>Consider including documentation or README files</li>
+<li>Don&#x27;t over-select - focus on what&#x27;s truly relevant</li>
+<li><strong>No worries if this seems tedious–we&#x27;ll see how to automate this soon</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-write-your-task-description">Step 2: Write Your Task Description<a href="#step-2-write-your-task-description" class="hash-link" aria-label="Direct link to Step 2: Write Your Task Description" title="Direct link to Step 2: Write Your Task Description">​</a></h3>
+<p>Navigate to the <strong>Prompt Studio</strong> (Workbench tab) and use the &quot;Task Description&quot; area:</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Example: &quot;Implement a new function to sort users by registration date&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Example: &quot;Refactor the ApiService.ts to use async/await instead of promises&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Example: &quot;Explain how the authentication middleware works&quot;</span><br></span></code></pre></div></div>
+<p><strong>Task Description Best Practices:</strong></p>
+<ul>
+<li>Be specific about what you want to achieve</li>
+<li>Include any constraints or requirements</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-use-context-field-optional">Step 3: Use Context Field (Optional)<a href="#step-3-use-context-field-optional" class="hash-link" aria-label="Direct link to Step 3: Use Context Field (Optional)" title="Direct link to Step 3: Use Context Field (Optional)">​</a></h3>
+<p>The <strong>Context</strong> field below the task description is useful for:</p>
+<ul>
+<li>Partial commit messages</li>
+<li>Specific technical requirements</li>
+<li>Temporary notes or instructions</li>
+<li>Information that shouldn&#x27;t be part of the main task</li>
+</ul>
+<p>You won&#x27;t need to use this most of the time.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-choose-a-prompt-template">Step 4: Choose a Prompt Template<a href="#step-4-choose-a-prompt-template" class="hash-link" aria-label="Direct link to Step 4: Choose a Prompt Template" title="Direct link to Step 4: Choose a Prompt Template">​</a></h3>
+<p>Athanor provides several <strong>preset prompt templates</strong>:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="core-prompt-types">Core Prompt Types<a href="#core-prompt-types" class="hash-link" aria-label="Direct link to Core Prompt Types" title="Direct link to Core Prompt Types">​</a></h4>
+<ul>
+<li><strong>Autoselect</strong>: Asks the AI to suggest which files are relevant to your task</li>
+<li><strong>Query</strong>: For asking questions about the codebase without making changes</li>
+<li><strong>Architect</strong>: For planning new features or refactorings, often breaking them into multiple steps (&quot;commits&quot;)</li>
+<li><strong>Coder</strong>: For generating code to implement a feature or change</li>
+<li><strong>Minimal</strong>: Provides only repository information and your task description</li>
+<li><strong>Writer</strong>: For writing or editing text, like documentation</li>
+<li><strong>Meta-prompt</strong>: For creating a detailed prompt from a simpler task description</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="prompt-variants">Prompt Variants<a href="#prompt-variants" class="hash-link" aria-label="Direct link to Prompt Variants" title="Direct link to Prompt Variants">​</a></h4>
+<p>Many prompt templates have <strong>variants</strong> (e.g., &quot;Default&quot;, &quot;Full file updates&quot;):</p>
+<ol>
+<li><strong>Right-click</strong> a prompt button to see available variants</li>
+<li><strong>Select</strong> a different variant via the context menu</li>
+<li><strong>Left-click</strong> the button to use the active variant</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-configure-options">Step 5: Configure Options<a href="#step-5-configure-options" class="hash-link" aria-label="Direct link to Step 5: Configure Options" title="Direct link to Step 5: Configure Options">​</a></h3>
+<p>Use the <strong>configuration toggles</strong> to customize your prompt:</p>
+<ul>
+<li><strong>Smart Preview</strong>: Truncates non-selected files to essential parts only<!-- -->
+<ul>
+<li>If inactive, only the selected files are included in the prompt</li>
+</ul>
+</li>
+<li><strong>Include File Tree</strong>: Adds a schematic of your project&#x27;s file structure (recommended)</li>
+<li><strong>Include Project Info</strong>: Includes on top general project information (from <code>PROJECT.md</code> or a similar project file)</li>
+<li><strong>Documentation Format</strong>: Switches between XML tags and Markdown for file content formatting</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-generate-and-copy">Step 6: Generate and Copy<a href="#step-6-generate-and-copy" class="hash-link" aria-label="Direct link to Step 6: Generate and Copy" title="Direct link to Step 6: Generate and Copy">​</a></h3>
+<ol>
+<li><strong>Click</strong> your chosen prompt button (e.g., &quot;Coder&quot;)</li>
+<li>The prompt appears in the <strong>&quot;Generated Prompt&quot;</strong> area</li>
+<li><strong>Automatic copy</strong>: The prompt is automatically copied to your clipboard</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-workflow">Example Workflow<a href="#example-workflow" class="hash-link" aria-label="Direct link to Example Workflow" title="Direct link to Example Workflow">​</a></h2>
+<p>Let&#x27;s walk through creating a prompt for a new feature:</p>
+<ol>
+<li><strong>Select files</strong>: <code>userController.ts</code>, <code>userService.ts</code>, <code>userTypes.ts</code></li>
+<li><strong>Task description</strong>: &quot;Add a new API endpoint <code>/users/active</code> that returns only users active in the last 30 days&quot;</li>
+<li><strong>Choose prompt</strong>: Click &quot;Coder&quot; for implementation-focused prompt</li>
+<li><strong>Generated prompt</strong>: Comprehensive prompt with file contents and clear instructions</li>
+<li><strong>Copy to AI</strong>: Paste into ChatGPT, Claude, or your preferred AI assistant</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prompt-types-in-detail">Prompt Types in Detail<a href="#prompt-types-in-detail" class="hash-link" aria-label="Direct link to Prompt Types in Detail" title="Direct link to Prompt Types in Detail">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autoselect-workflow">Autoselect Workflow<a href="#autoselect-workflow" class="hash-link" aria-label="Direct link to Autoselect Workflow" title="Direct link to Autoselect Workflow">​</a></h3>
+<p>Perfect when you&#x27;re not sure which files to include or when you feel lazy (which if you are like me I assume it&#x27;s most of the time):</p>
+<ol>
+<li><strong>Describe your task</strong> without selecting specific files</li>
+<li><strong>Click &quot;Autoselect&quot;</strong> to generate a file selection prompt<!-- -->
+<ul>
+<li>Ensure &quot;Smart Preview&quot; is active, so that the prompt includes code snippets</li>
+</ul>
+</li>
+<li><strong>Paste into AI</strong> to get file recommendations</li>
+<li><strong>Apply AI Output</strong> to automatically select suggested files</li>
+<li><strong>Generate</strong> a follow-up prompt with the selected files</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="query-workflow">Query Workflow<a href="#query-workflow" class="hash-link" aria-label="Direct link to Query Workflow" title="Direct link to Query Workflow">​</a></h3>
+<p>Great for understanding existing code:</p>
+<ol>
+<li><strong>Ask specific questions</strong> in the task description</li>
+<li><strong>Select</strong> (or <em>Autoselect</em>) files you want to understand or may be needed to answer your query</li>
+<li><strong>Use &quot;Query&quot;</strong> prompt for analysis-focused output</li>
+<li><strong>Get explanations</strong> without code modifications<!-- -->
+<ul>
+<li>You can ask the AI assistant for a summary of your conversation (possibly to reuse in Athanor for your next prompt)</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="architect-workflow">Architect Workflow<a href="#architect-workflow" class="hash-link" aria-label="Direct link to Architect Workflow" title="Direct link to Architect Workflow">​</a></h3>
+<p>Ideal for complex features:</p>
+<ol>
+<li><strong>Describe the overall feature</strong> you want to build<!-- -->
+<ul>
+<li>Again, Select or <em>Autoselect</em> relevant files</li>
+</ul>
+</li>
+<li><strong>Use &quot;Architect&quot;</strong> to get a step-by-step plan</li>
+<li><strong>Receive commit-by-commit</strong> breakdown</li>
+<li><strong>Use individual commits</strong> as context for follow-up &quot;Coder&quot; prompts<!-- -->
+<ul>
+<li>You can select individual commits from the Task Context area</li>
+<li>You can also just proceed with your AI assistant, asking it to implement one commit at a time (&quot;Go on with Commit 2&quot;, ...)</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-better-prompts">Tips for Better Prompts<a href="#tips-for-better-prompts" class="hash-link" aria-label="Direct link to Tips for Better Prompts" title="Direct link to Tips for Better Prompts">​</a></h2>
+<ol>
+<li><strong>Be specific</strong>: Vague descriptions lead to generic responses</li>
+<li><strong>Provide context</strong>: Include relevant background information</li>
+<li><strong>Set expectations</strong>: Mention coding style, patterns, or constraints</li>
+<li><strong>Use examples</strong>: If you have preferences, include examples</li>
+<li><strong>Iterate</strong>: Start with a simple prompt and refine based on results</li>
+</ol>
+<p>Next, learn how to apply the AI&#x27;s response back to your project!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/lacerbi/athanor-website/edit/main/docs/tutorial/03-prompt-creation.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/tutorial/navigating-interface"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Navigating the Interface</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/tutorial/applying-changes"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Applying AI-Generated Changes</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#the-prompt-creation-process" class="table-of-contents__link toc-highlight">The Prompt Creation Process</a><ul><li><a href="#step-1-select-relevant-files" class="table-of-contents__link toc-highlight">Step 1: Select Relevant Files</a></li><li><a href="#step-2-write-your-task-description" class="table-of-contents__link toc-highlight">Step 2: Write Your Task Description</a></li><li><a href="#step-3-use-context-field-optional" class="table-of-contents__link toc-highlight">Step 3: Use Context Field (Optional)</a></li><li><a href="#step-4-choose-a-prompt-template" class="table-of-contents__link toc-highlight">Step 4: Choose a Prompt Template</a></li><li><a href="#step-5-configure-options" class="table-of-contents__link toc-highlight">Step 5: Configure Options</a></li><li><a href="#step-6-generate-and-copy" class="table-of-contents__link toc-highlight">Step 6: Generate and Copy</a></li></ul></li><li><a href="#example-workflow" class="table-of-contents__link toc-highlight">Example Workflow</a></li><li><a href="#prompt-types-in-detail" class="table-of-contents__link toc-highlight">Prompt Types in Detail</a><ul><li><a href="#autoselect-workflow" class="table-of-contents__link toc-highlight">Autoselect Workflow</a></li><li><a href="#query-workflow" class="table-of-contents__link toc-highlight">Query Workflow</a></li><li><a href="#architect-workflow" class="table-of-contents__link toc-highlight">Architect Workflow</a></li></ul></li><li><a href="#tips-for-better-prompts" class="table-of-contents__link toc-highlight">Tips for Better Prompts</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/tutorial/introduction">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/lacerbi/athanor/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Issues<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/lacerbi/athanor/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Support</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/sponsors/lacerbi" target="_blank" rel="noopener noreferrer" class="footer__link-item">Sponsor on GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Luigi Acerbi. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

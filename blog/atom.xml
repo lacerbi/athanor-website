@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://athanor.works/blog</id>
+    <title>Athanor - AI Workbench Blog</title>
+    <updated>2025-06-03T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://athanor.works/blog"/>
+    <subtitle>Athanor - AI Workbench Blog</subtitle>
+    <icon>https://athanor.works/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Athanor!]]></title>
+        <id>https://athanor.works/blog/welcome-to-athanor</id>
+        <link href="https://athanor.works/blog/welcome-to-athanor"/>
+        <updated>2025-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I am excited to finally share the pre-alpha release of Athanor - AI Workbench together with this new website.]]></summary>
+        <content type="html"><![CDATA[<p>I am excited to finally share the pre-alpha release of <a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer">Athanor - AI Workbench</a> together with this new website.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-athanor">What is Athanor?<a href="https://athanor.works/blog/welcome-to-athanor#what-is-athanor" class="hash-link" aria-label="Direct link to What is Athanor?" title="Direct link to What is Athanor?">​</a></h2>
+<p>Athanor is a desktop app that sits between you and your AI assistant (ChatGPT, Claude, Gemini, etc.). Think of it as a workbench with a set of tools and knobs to make AI workflow actually practical. Athanor helps you:</p>
+<ul>
+<li><strong>Intelligently select</strong> relevant files for your AI prompts</li>
+<li><strong>Generate comprehensive prompts</strong> with proper context</li>
+<li><strong>Safely apply AI-generated changes</strong> with full visibility and control</li>
+<li><strong>Work with any AI assistant</strong> - no API keys required for core functionality</li>
+</ul>
+<p>Athanor is an <strong>open-source</strong> project and you can find it <a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer">on GitHub</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-athanor">Why Athanor?<a href="https://athanor.works/blog/welcome-to-athanor#why-athanor" class="hash-link" aria-label="Direct link to Why Athanor?" title="Direct link to Why Athanor?">​</a></h2>
+<p>Athanor was born out of my frustration with using standard chat interfaces for AI-assisted development for code and technical writing:</p>
+<ul>
+<li>Gathering files manually was a pain, even using tools such as <a href="https://github.com/yamadashy/repomix" target="_blank" rel="noopener noreferrer"><code>repomix</code></a></li>
+<li>Most of my workflow consisted of fairly standardized operations (planning features, requesting changes, summarizing files) that I found myself retyping constantly.</li>
+<li>Integrating the AI output back into a project–whether a codebase, a website, or technical writing–is painful:<!-- -->
+<ul>
+<li>When the AI outputs just a snippet, you need to manually copy-paste it at exactly the right place</li>
+<li>When the AI outputs the entire file, it sometimes messes up or <em>forgets</em> something else along the way–and some files are just too large, so waiting for the full output is unwieldy</li>
+</ul>
+</li>
+</ul>
+<p>Also, having already multiple AI subscriptions, I wasn't too keen on switching to a pure API workflow.</p>
+<p><strong>That's how Athanor began.</strong> And now, after months of using it to build itself, I'm ready to share it with you.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-on-this-website">What's on This Website<a href="https://athanor.works/blog/welcome-to-athanor#whats-on-this-website" class="hash-link" aria-label="Direct link to What's on This Website" title="Direct link to What's on This Website">​</a></h2>
+<p>I have put together documentation that covers what I thought would be useful for a newcomer. Yes, of course I have used Athanor and various AI assistants to help me with this (but this is me writing, working from an excessively salesman-y draft of this post).</p>
+<p>Most importantly, <a href="https://athanor.works/docs/tutorial/introduction"><strong>the Tutorial</strong></a> takes you from installation to your first real workflow. It goes from basic prompts to customizing your Athanor experience to your specific needs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="where-were-at">Where We're At<a href="https://athanor.works/blog/welcome-to-athanor#where-were-at" class="hash-link" aria-label="Direct link to Where We're At" title="Direct link to Where We're At">​</a></h2>
+<p>Athanor is in <strong>pre-alpha</strong>. What does that mean practically?</p>
+<ul>
+<li>It works. I have been using it daily for months (including to build Athanor itself from <code>v0.1.0</code>)</li>
+<li>There are rough edges. Sometimes you'll hit a weird bug</li>
+<li>Features are still evolving based on what actually helps vs. what seemed like a good idea</li>
+<li>Many features are still in the wishlist</li>
+</ul>
+<p>Your feedback at this stage is gold. If something is annoying or broken, please let me know.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try It Out<a href="https://athanor.works/blog/welcome-to-athanor#try-it-out" class="hash-link" aria-label="Direct link to Try It Out" title="Direct link to Try It Out">​</a></h2>
+<p>Right now, Athanor runs in developer mode:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/lacerbi/athanor.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd athanor &amp;&amp; npm install</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm run dev</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-coming">What's Coming<a href="https://athanor.works/blog/welcome-to-athanor#whats-coming" class="hash-link" aria-label="Direct link to What's Coming" title="Direct link to What's Coming">​</a></h2>
+<p>In the next few weeks, I will be focusing on basic improvements:</p>
+<ul>
+<li>Making it more stable</li>
+<li>Increasing test coverage (yes, I know)</li>
+<li>Performance improvements for larger projects (this will require making the <em>Smart Preview</em> actually smart)</li>
+<li>More prompt templates based on actual use cases</li>
+<li>Eventually, packaged releases so you do not need to run from source</li>
+</ul>
+<p>The roadmap will also depend on what you tell me.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="one-more-thing">One More Thing<a href="https://athanor.works/blog/welcome-to-athanor#one-more-thing" class="hash-link" aria-label="Direct link to One More Thing" title="Direct link to One More Thing">​</a></h2>
+<p>At the moment, one thing Athanor is pretty good at is building Athanor.</p>
+<p>The Athanor codebase, after an initial old-school "copy-paste" period, has been almost entirely written with Athanor. The <em>almost</em> is there just for academic precision–more than 99% of the code was written and integrated using Athanor. I have made a few manual changes here and here, when it was faster for me to fix a typo by hand than going through a prompt.</p>
+<p>With this, I have experienced first-hand how development has become smoother and smoother. Having smarter models helped too, or course.</p>
+<p>Anyhow, I think you might find Athanor useful too. Give it a try, and let me know how it goes.
+You can contact me on a variety of social media or directly on Athanor's <a href="https://github.com/lacerbi/athanor/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a> or <a href="https://github.com/lacerbi/athanor/discussions" target="_blank" rel="noopener noreferrer">discussions</a>.</p>
+<hr>
+<p><em>Luigi Acerbi, building Athanor one prompt at a time</em></p>]]></content>
+        <author>
+            <name>Luigi Acerbi</name>
+            <uri>https://lacerbi.github.io/</uri>
+        </author>
+        <category label="Athanor" term="Athanor"/>
+        <category label="Announcement" term="Announcement"/>
+        <category label="Development" term="Development"/>
+    </entry>
+</feed>

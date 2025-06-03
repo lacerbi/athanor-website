@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tutorial/example-workflows" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.0">
+<title data-rh="true">Example Workflows | Athanor - AI Workbench</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://athanor.works/img/social_card.png"><meta data-rh="true" name="twitter:image" content="https://athanor.works/img/social_card.png"><meta data-rh="true" property="og:url" content="https://athanor.works/docs/tutorial/example-workflows"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="athanor, ai, development, workflow, assistant, coding, automation"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" property="twitter:card" content="summary_large_image"><meta data-rh="true" property="twitter:title" content="Athanor - AI Workbench"><meta data-rh="true" property="twitter:description" content="Streamline your AI-assisted development workflow with smart context selection and controlled change application."><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Example Workflows | Athanor - AI Workbench"><meta data-rh="true" name="description" content="Learn how to apply Athanor&#x27;s features in real-world scenarios with these step-by-step workflow examples, from simple feature additions to complex system integrations."><meta data-rh="true" property="og:description" content="Learn how to apply Athanor&#x27;s features in real-world scenarios with these step-by-step workflow examples, from simple feature additions to complex system integrations."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://athanor.works/docs/tutorial/example-workflows"><link data-rh="true" rel="alternate" href="https://athanor.works/docs/tutorial/example-workflows" hreflang="en"><link data-rh="true" rel="alternate" href="https://athanor.works/docs/tutorial/example-workflows" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Example Workflows","item":"https://athanor.works/docs/tutorial/example-workflows"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Athanor - AI Workbench RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Athanor - AI Workbench Atom Feed"><link rel="stylesheet" href="/assets/css/styles.389466c9.css">
+<script src="/assets/js/runtime~main.b53b70eb.js" defer="defer"></script>
+<script src="/assets/js/main.a64f1e3b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/athanor_logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/athanor_logo.png" alt="Athanor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/athanor_logo.png" alt="Athanor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/docs/tutorial/introduction">Tutorial</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/introduction">Getting Started with Athanor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/project-setup">Project Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/navigating-interface">Navigating the Interface</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/prompt-creation">Prompt Creation &amp; Refinement</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/applying-changes">Applying AI-Generated Changes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/preset-tasks">Preset Tasks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/other-features">Other Features</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/customizing-templates">Customizing Prompts and Tasks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/tutorial/example-workflows">Example Workflows</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Example Workflows</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>8. Example Workflows</h1></header>
+<p>Learn how to apply Athanor&#x27;s features in real-world scenarios with these step-by-step workflow examples, from simple feature additions to complex system integrations.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="simple-feature-dark-mode-toggle">Simple Feature: Dark Mode Toggle<a href="#simple-feature-dark-mode-toggle" class="hash-link" aria-label="Direct link to Simple Feature: Dark Mode Toggle" title="Direct link to Simple Feature: Dark Mode Toggle">​</a></h2>
+<p>Let&#x27;s implement a dark mode toggle for a web application.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-define-the-task">Step 1: Define the Task<a href="#step-1-define-the-task" class="hash-link" aria-label="Direct link to Step 1: Define the Task" title="Direct link to Step 1: Define the Task">​</a></h3>
+<p><strong>Task Description</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Implement a dark mode toggle switch in the settings panel that saves the user&#x27;s preference to localStorage and applies the theme immediately.</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-smart-file-selection">Step 2: Smart File Selection<a href="#step-2-smart-file-selection" class="hash-link" aria-label="Direct link to Step 2: Smart File Selection" title="Direct link to Step 2: Smart File Selection">​</a></h3>
+<p>Instead of manually selecting files, let&#x27;s use Athanor&#x27;s intelligence:</p>
+<ol>
+<li><strong>Don&#x27;t select any files initially</strong></li>
+<li><strong>Click &quot;Autoselect&quot;</strong> prompt template</li>
+<li><strong>Copy</strong> the generated prompt to your AI assistant</li>
+<li><strong>Paste response</strong> back into Athanor</li>
+<li><strong>Click &quot;Apply AI Output&quot;</strong> to auto-select relevant files</li>
+</ol>
+<p>The AI might suggest files like:</p>
+<ul>
+<li><code>components/SettingsPanel.tsx</code></li>
+<li><code>hooks/useTheme.ts</code></li>
+<li><code>styles/globals.css</code></li>
+<li><code>contexts/ThemeContext.tsx</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-implement-the-feature">Step 3: Implement the Feature<a href="#step-3-implement-the-feature" class="hash-link" aria-label="Direct link to Step 3: Implement the Feature" title="Direct link to Step 3: Implement the Feature">​</a></h3>
+<ol>
+<li><strong>Review</strong> the auto-selected files</li>
+<li><strong>Click &quot;Coder&quot;</strong> prompt template</li>
+<li><strong>Copy</strong> prompt to AI assistant</li>
+<li><strong>Receive</strong> implementation with proper React hooks, CSS variables, and localStorage persistence</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-apply-changes">Step 4: Apply Changes<a href="#step-4-apply-changes" class="hash-link" aria-label="Direct link to Step 4: Apply Changes" title="Direct link to Step 4: Apply Changes">​</a></h3>
+<ol>
+<li><strong>Copy</strong> AI response</li>
+<li><strong>Click &quot;Apply AI Output&quot;</strong></li>
+<li><strong>Review</strong> each proposed change in the diff viewer</li>
+<li><strong>Accept</strong> changes that look correct</li>
+<li><strong>Reject</strong> any unwanted modifications</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="expected-outcome">Expected Outcome<a href="#expected-outcome" class="hash-link" aria-label="Direct link to Expected Outcome" title="Direct link to Expected Outcome">​</a></h3>
+<ul>
+<li>New theme toggle component</li>
+<li>Hook for theme management</li>
+<li>CSS variables for dark/light modes</li>
+<li>Persistent user preferences</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complex-feature-stripe-payment-integration">Complex Feature: Stripe Payment Integration<a href="#complex-feature-stripe-payment-integration" class="hash-link" aria-label="Direct link to Complex Feature: Stripe Payment Integration" title="Direct link to Complex Feature: Stripe Payment Integration">​</a></h2>
+<p>Let&#x27;s integrate Stripe for handling monthly user subscriptions with a multi-commit approach.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-architecture-planning">Phase 1: Architecture Planning<a href="#phase-1-architecture-planning" class="hash-link" aria-label="Direct link to Phase 1: Architecture Planning" title="Direct link to Phase 1: Architecture Planning">​</a></h3>
+<p><strong>Task Description</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Integrate Stripe for handling monthly user subscriptions. This should include:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Creating subscription plans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Handling webhooks for payment success/failure</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Updating user subscription status</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Managing billing portal access</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Error handling and user feedback</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-get-the-architecture-plan">Step 1: Get the Architecture Plan<a href="#step-1-get-the-architecture-plan" class="hash-link" aria-label="Direct link to Step 1: Get the Architecture Plan" title="Direct link to Step 1: Get the Architecture Plan">​</a></h4>
+<ol>
+<li><strong>Click &quot;Autoselect&quot;</strong> to identify relevant files</li>
+<li><strong>Apply AI Output</strong> to select suggested files</li>
+<li><strong>Click &quot;Architect&quot;</strong> prompt template</li>
+<li><strong>Copy</strong> to AI assistant for strategic planning</li>
+</ol>
+<p>The AI will provide a commit-by-commit breakdown:</p>
+<p><strong>Commit 1</strong>: Setup Stripe SDK and API keys
+<strong>Commit 2</strong>: Implement subscription plan management
+<strong>Commit 3</strong>: Create checkout session handling
+<strong>Commit 4</strong>: Implement webhook endpoint
+<strong>Commit 5</strong>: Build user billing portal
+<strong>Commit 6</strong>: Add error handling and UI feedback</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-copy-architecture-to-context">Step 2: Copy Architecture to Context<a href="#step-2-copy-architecture-to-context" class="hash-link" aria-label="Direct link to Step 2: Copy Architecture to Context" title="Direct link to Step 2: Copy Architecture to Context">​</a></h4>
+<ol>
+<li><strong>Copy</strong> the AI&#x27;s architecture response</li>
+<li><strong>Paste</strong> the commit plan into the <strong>Context</strong> field</li>
+<li>This will be included in subsequent prompts</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-implementation-commit-by-commit">Phase 2: Implementation (Commit by Commit)<a href="#phase-2-implementation-commit-by-commit" class="hash-link" aria-label="Direct link to Phase 2: Implementation (Commit by Commit)" title="Direct link to Phase 2: Implementation (Commit by Commit)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="commit-1-setup-stripe-sdk">Commit 1: Setup Stripe SDK<a href="#commit-1-setup-stripe-sdk" class="hash-link" aria-label="Direct link to Commit 1: Setup Stripe SDK" title="Direct link to Commit 1: Setup Stripe SDK">​</a></h4>
+<ol>
+<li><strong>Select &quot;Commit 1&quot; from Task Context</strong>:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Implement Commit 1: Setup Stripe SDK and API keys.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Configure environment variables and initialize Stripe client.</span><br></span></code></pre></div></div>
+</li>
+<li><strong>Use existing file selection</strong> (you rarely need to rerun Autoselect)</li>
+<li><strong>Click &quot;Coder&quot;</strong> prompt</li>
+<li><strong>Apply changes</strong> after review</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="commit-2-subscription-plans">Commit 2: Subscription Plans<a href="#commit-2-subscription-plans" class="hash-link" aria-label="Direct link to Commit 2: Subscription Plans" title="Direct link to Commit 2: Subscription Plans">​</a></h4>
+<ol>
+<li><strong>Either:</strong>
+<ul>
+<li><strong>Continue</strong> in your current AI chat by telling the AI &quot;Continue with Commit 2&quot;; <strong>or</strong></li>
+<li><strong>Select &quot;Commit 2&quot; from Task Context</strong>, click &quot;Coder prompt&quot; and paste in a new chat</li>
+<li>This choice depends on the complexity and length of the current chat</li>
+</ul>
+</li>
+<li><strong>Review and apply</strong> changes</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="continue-pattern-for-remaining-commits">Continue Pattern for Remaining Commits<a href="#continue-pattern-for-remaining-commits" class="hash-link" aria-label="Direct link to Continue Pattern for Remaining Commits" title="Direct link to Continue Pattern for Remaining Commits">​</a></h4>
+<p>Repeat the process for each commit:</p>
+<ul>
+<li>Update task context with current commit (or continue in the chat)</li>
+<li>Use &quot;Coder&quot; prompt for implementation</li>
+<li>Apply and test changes</li>
+<li>Move to next commit</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-integration-testing">Phase 3: Integration Testing<a href="#phase-3-integration-testing" class="hash-link" aria-label="Direct link to Phase 3: Integration Testing" title="Direct link to Phase 3: Integration Testing">​</a></h3>
+<p>After completing all commits:</p>
+<ol>
+<li><strong>Task Description</strong>:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Review the complete Stripe integration implementation and provide:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Integration testing checklist</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Potential security considerations</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Performance optimization opportunities</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Error scenarios to test</span><br></span></code></pre></div></div>
+</li>
+<li><strong>Select all modified files</strong></li>
+<li><strong>Use &quot;Query&quot;</strong> prompt for analysis</li>
+<li><strong>Follow AI recommendations</strong> for testing</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-existing-code-authentication-flow">Understanding Existing Code: Authentication Flow<a href="#understanding-existing-code-authentication-flow" class="hash-link" aria-label="Direct link to Understanding Existing Code: Authentication Flow" title="Direct link to Understanding Existing Code: Authentication Flow">​</a></h2>
+<p>Learn how to use Athanor to understand unfamiliar codebases.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-broad-overview">Step 1: Broad Overview<a href="#step-1-broad-overview" class="hash-link" aria-label="Direct link to Step 1: Broad Overview" title="Direct link to Step 1: Broad Overview">​</a></h3>
+<p><strong>Task Description</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Explain the current user authentication flow, including:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Token generation and validation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Session management</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Role-based access control</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Security measures implemented</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Which files are primarily involved?</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="process">Process:<a href="#process" class="hash-link" aria-label="Direct link to Process:" title="Direct link to Process:">​</a></h4>
+<ol>
+<li><strong>Click &quot;Autoselect&quot;</strong> to find auth-related files</li>
+<li><strong>Apply AI Output</strong> to select suggested files</li>
+<li><strong>Click &quot;Query&quot;</strong> prompt for analysis-focused output</li>
+<li><strong>Review</strong> AI&#x27;s explanation of the authentication system</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-deep-dive-into-specific-components">Step 2: Deep Dive into Specific Components<a href="#step-2-deep-dive-into-specific-components" class="hash-link" aria-label="Direct link to Step 2: Deep Dive into Specific Components" title="Direct link to Step 2: Deep Dive into Specific Components">​</a></h3>
+<p>Based on the AI&#x27;s overview, dive deeper on the JWT token validation middleware.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="process-1">Process:<a href="#process-1" class="hash-link" aria-label="Direct link to Process:" title="Direct link to Process:">​</a></h4>
+<ol>
+<li><strong>Select</strong> specific middleware files identified in Step 1</li>
+<li>Use the <strong>copy</strong> action from the File Manager to copy just these files in the existing chat</li>
+<li><strong>Ask follow-up questions</strong> in the same AI chat</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-document-your-understanding">Step 3: Document Your Understanding<a href="#step-3-document-your-understanding" class="hash-link" aria-label="Direct link to Step 3: Document Your Understanding" title="Direct link to Step 3: Document Your Understanding">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="process-2">Process:<a href="#process-2" class="hash-link" aria-label="Direct link to Process:" title="Direct link to Process:">​</a></h4>
+<ol>
+<li><strong>Ask the AI for a Summary</strong> of your chat</li>
+<li><strong>Paste</strong> the summary into the Task Description</li>
+<li><strong>Autoselect</strong> all authentication-related files</li>
+<li><strong>Use &quot;Writer&quot;</strong> prompt for documentation generation</li>
+<li><strong>Apply changes</strong> to create/update documentation files</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices-for-workflow-success">Best Practices for Workflow Success<a href="#best-practices-for-workflow-success" class="hash-link" aria-label="Direct link to Best Practices for Workflow Success" title="Direct link to Best Practices for Workflow Success">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="planning-phase">Planning Phase<a href="#planning-phase" class="hash-link" aria-label="Direct link to Planning Phase" title="Direct link to Planning Phase">​</a></h3>
+<ol>
+<li><strong>Start with Autoselect</strong> when unsure about file selection</li>
+<li><strong>Use Architect</strong> for complex features requiring multiple steps</li>
+<li><strong>Break large tasks</strong> into smaller, manageable commits</li>
+<li><strong>Document your plan</strong> in the Context field</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-phase">Implementation Phase<a href="#implementation-phase" class="hash-link" aria-label="Direct link to Implementation Phase" title="Direct link to Implementation Phase">​</a></h3>
+<ol>
+<li><strong>Review AI suggestions</strong> carefully before applying</li>
+<li><strong>Test incrementally</strong> after each commit</li>
+<li><strong>Use version control</strong> to track changes</li>
+<li><strong>Ask follow-up questions</strong> when AI responses are unclear</li>
+<li><strong>Stay in the chat</strong> if the context is still relevant</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quality-assurance">Quality Assurance<a href="#quality-assurance" class="hash-link" aria-label="Direct link to Quality Assurance" title="Direct link to Quality Assurance">​</a></h3>
+<ol>
+<li><strong>Use Query prompts</strong> to verify understanding</li>
+<li><strong>Generate tests</strong> for critical functionality</li>
+<li><strong>Review security implications</strong> of changes</li>
+<li><strong>Document</strong> important decisions and changes</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-collaboration">Team Collaboration<a href="#team-collaboration" class="hash-link" aria-label="Direct link to Team Collaboration" title="Direct link to Team Collaboration">​</a></h3>
+<ol>
+<li><strong>Share custom templates</strong> that work well for your team</li>
+<li><strong>Use consistent commit messages</strong> when applying changes</li>
+<li><strong>Document workflows</strong> that prove effective</li>
+<li><strong>Train team members</strong> on successful patterns</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting-common-workflow-issues">Troubleshooting Common Workflow Issues<a href="#troubleshooting-common-workflow-issues" class="hash-link" aria-label="Direct link to Troubleshooting Common Workflow Issues" title="Direct link to Troubleshooting Common Workflow Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ai-responses-dont-match-expectations">AI Responses Don&#x27;t Match Expectations<a href="#ai-responses-dont-match-expectations" class="hash-link" aria-label="Direct link to AI Responses Don&#x27;t Match Expectations" title="Direct link to AI Responses Don&#x27;t Match Expectations">​</a></h3>
+<ul>
+<li><strong>Refine task descriptions</strong> with more specific requirements</li>
+<li><strong>Add relevant context</strong> about coding standards or patterns</li>
+<li><strong>Include examples</strong> of desired output format</li>
+<li><strong>Break complex requests</strong> into smaller parts</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes-dont-apply-cleanly">Changes Don&#x27;t Apply Cleanly<a href="#changes-dont-apply-cleanly" class="hash-link" aria-label="Direct link to Changes Don&#x27;t Apply Cleanly" title="Direct link to Changes Don&#x27;t Apply Cleanly">​</a></h3>
+<ul>
+<li><strong>Check that files haven&#x27;t changed</strong> since generating the prompt</li>
+<li><strong>Regenerate prompts</strong> with current file state</li>
+<li><strong>Review merge conflicts</strong> carefully</li>
+<li><strong>Apply changes in smaller batches</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-takes-too-long">Workflow Takes Too Long<a href="#workflow-takes-too-long" class="hash-link" aria-label="Direct link to Workflow Takes Too Long" title="Direct link to Workflow Takes Too Long">​</a></h3>
+<ul>
+<li><strong>Use preset tasks</strong> for common operations</li>
+<li><strong>Create custom templates</strong> for repeated workflows</li>
+<li><strong>Leverage API integration</strong> for simple requests</li>
+<li><strong>Batch similar operations</strong> together</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="results-lack-project-context">Results Lack Project Context<a href="#results-lack-project-context" class="hash-link" aria-label="Direct link to Results Lack Project Context" title="Direct link to Results Lack Project Context">​</a></h3>
+<ul>
+<li><strong>Include <code>PROJECT.md</code> or documentation</strong> files in selection</li>
+<li><strong>Add project-specific requirements</strong> to task descriptions</li>
+<li><strong>Use project-specific custom templates</strong></li>
+<li><strong>Provide architectural context</strong> in prompts</li>
+</ul>
+<p>Ready to master Athanor? Practice these workflows with your own projects and experiment with creating custom templates that match your team&#x27;s specific needs!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/lacerbi/athanor-website/edit/main/docs/tutorial/08-example-workflows.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/tutorial/customizing-templates"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Customizing Prompts and Tasks</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#simple-feature-dark-mode-toggle" class="table-of-contents__link toc-highlight">Simple Feature: Dark Mode Toggle</a><ul><li><a href="#step-1-define-the-task" class="table-of-contents__link toc-highlight">Step 1: Define the Task</a></li><li><a href="#step-2-smart-file-selection" class="table-of-contents__link toc-highlight">Step 2: Smart File Selection</a></li><li><a href="#step-3-implement-the-feature" class="table-of-contents__link toc-highlight">Step 3: Implement the Feature</a></li><li><a href="#step-4-apply-changes" class="table-of-contents__link toc-highlight">Step 4: Apply Changes</a></li><li><a href="#expected-outcome" class="table-of-contents__link toc-highlight">Expected Outcome</a></li></ul></li><li><a href="#complex-feature-stripe-payment-integration" class="table-of-contents__link toc-highlight">Complex Feature: Stripe Payment Integration</a><ul><li><a href="#phase-1-architecture-planning" class="table-of-contents__link toc-highlight">Phase 1: Architecture Planning</a></li><li><a href="#phase-2-implementation-commit-by-commit" class="table-of-contents__link toc-highlight">Phase 2: Implementation (Commit by Commit)</a></li><li><a href="#phase-3-integration-testing" class="table-of-contents__link toc-highlight">Phase 3: Integration Testing</a></li></ul></li><li><a href="#understanding-existing-code-authentication-flow" class="table-of-contents__link toc-highlight">Understanding Existing Code: Authentication Flow</a><ul><li><a href="#step-1-broad-overview" class="table-of-contents__link toc-highlight">Step 1: Broad Overview</a></li><li><a href="#step-2-deep-dive-into-specific-components" class="table-of-contents__link toc-highlight">Step 2: Deep Dive into Specific Components</a></li><li><a href="#step-3-document-your-understanding" class="table-of-contents__link toc-highlight">Step 3: Document Your Understanding</a></li></ul></li><li><a href="#best-practices-for-workflow-success" class="table-of-contents__link toc-highlight">Best Practices for Workflow Success</a><ul><li><a href="#planning-phase" class="table-of-contents__link toc-highlight">Planning Phase</a></li><li><a href="#implementation-phase" class="table-of-contents__link toc-highlight">Implementation Phase</a></li><li><a href="#quality-assurance" class="table-of-contents__link toc-highlight">Quality Assurance</a></li><li><a href="#team-collaboration" class="table-of-contents__link toc-highlight">Team Collaboration</a></li></ul></li><li><a href="#troubleshooting-common-workflow-issues" class="table-of-contents__link toc-highlight">Troubleshooting Common Workflow Issues</a><ul><li><a href="#ai-responses-dont-match-expectations" class="table-of-contents__link toc-highlight">AI Responses Don&#39;t Match Expectations</a></li><li><a href="#changes-dont-apply-cleanly" class="table-of-contents__link toc-highlight">Changes Don&#39;t Apply Cleanly</a></li><li><a href="#workflow-takes-too-long" class="table-of-contents__link toc-highlight">Workflow Takes Too Long</a></li><li><a href="#results-lack-project-context" class="table-of-contents__link toc-highlight">Results Lack Project Context</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/tutorial/introduction">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/lacerbi/athanor/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Issues<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/lacerbi/athanor/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Support</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/sponsors/lacerbi" target="_blank" rel="noopener noreferrer" class="footer__link-item">Sponsor on GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Luigi Acerbi. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
