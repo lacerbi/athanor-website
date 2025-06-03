@@ -79,21 +79,21 @@ const config: Config = {
       {
         name: "description",
         content:
-          "Athanor - AI Workbench: Streamline your AI-assisted development workflow with smart context selection, seamless AI integration, and controlled change application.",
+          "Athanor - AI Workbench: Integrate any AI assistant into your workflow: easily build project context, safely apply file changes, no API keys needed.",
       },
       { property: "og:type", content: "website" },
       { property: "og:title", content: "Athanor - AI Workbench" },
       {
         property: "og:description",
         content:
-          "Where modern alchemists cook - Streamline your AI-assisted development workflow",
+          "Where modern alchemists cook - Integrate any AI assistant into your workflow",
       },
       { property: "twitter:card", content: "summary_large_image" },
       { property: "twitter:title", content: "Athanor - AI Workbench" },
       {
         property: "twitter:description",
         content:
-          "Streamline your AI-assisted development workflow with smart context selection and controlled change application.",
+          "Integrate any AI assistant into your workflow: easily build project context, safely apply file changes, no API keys needed.",
       },
     ],
     navbar: {
