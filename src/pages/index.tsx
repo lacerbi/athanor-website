@@ -51,12 +51,18 @@ function HomepageHeader({ onImageClick }: { onImageClick: () => void }) {
           </div>
         </div>
         <div className={styles.heroImageContainer}>
-          <img
-            src={athanorIntroImageUrl}
-            alt="Athanor Introduction Screenshot"
-            className={`${styles.heroImage} ${styles.clickableImage}`}
-            onClick={onImageClick}
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={styles.heroImage}
+            title="Athanor AI Workbench Demo"
+          >
+            <source src="/video/athanor-demo-av1.mp4" type='video/mp4; codecs="av01.0.05M.08"' />
+            <source src="/video/athanor-demo-x264.mp4" type="video/mp4" />
+            Your browser does not support the video tag. Consider upgrading to a newer browser.
+          </video>
         </div>
       </div>
     </header>

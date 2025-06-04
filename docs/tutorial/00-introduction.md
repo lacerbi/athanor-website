@@ -6,17 +6,26 @@ sidebar_position: 1
 
 # Getting Started with Athanor
 
-:::warning 🚧 **PRE-ALPHA SOFTWARE & TUTORIAL**: 🚧
-
-Welcome to the Athanor tutorial! Please be aware that Athanor is currently in a **pre-alpha stage**. This means the application is under active development. Features described here may evolve, and you might encounter some rough edges or bugs.
-
-Your feedback is incredibly valuable as we refine both the application and this tutorial. Please report any issues or share your thoughts via [GitHub Issues](https://github.com/lacerbi/athanor/issues) and [GitHub Discussions](https://github.com/lacerbi/athanor/discussions).
-
-Thank you for exploring Athanor!
-
-:::
+Welcome to the Athanor tutorial!
 
 Athanor is a desktop application designed to help users and developers integrate AI assistants into their workflow. It streamlines creating AI prompts with relevant file context and applying the AI-generated changes back to your project or codebase.
+
+<video
+autoPlay
+muted
+playsInline
+controls
+className="tutorial-hero-video"
+title="Athanor AI Workbench Demo"
+
+>
+
+  <source src="/video/athanor-demo-av1.mp4" type='video/mp4; codecs="av01.0.05M.08"' />
+  <source src="/video/athanor-demo-x264.mp4" type="video/mp4" />
+  Your browser does not support the video tag. Consider upgrading to a newer browser.
+</video>
+
+_Watch Athanor's workflow in action: Describe task → Select files → Generate prompts → Use any AI chat assistant → Review and apply changes_
 
 ## What You'll Learn
 
@@ -64,6 +73,14 @@ Once Athanor launches, you're ready to begin the tutorial!
 
 ## Open Source & Community Feedback
 
-Athanor is an open-source project. You're welcome to explore the codebase on GitHub.
+Athanor is an open-source project. You're welcome to explore the [codebase on GitHub](https://github.com/lacerbi/athanor).
 
-During this pre-alpha phase, your feedback, bug reports, and feature suggestions are highly valued. We encourage you to share your insights via our GitHub repository.
+:::warning 🚧 **PRE-ALPHA SOFTWARE**: 🚧
+
+Please be aware that Athanor is currently in a **pre-alpha stage**. This means the application is under active development. Features described here may evolve, and you might encounter some rough edges or bugs.
+
+Your feedback is incredibly valuable as we refine both the application and this tutorial. Please report any issues or share your thoughts via [GitHub Issues](https://github.com/lacerbi/athanor/issues) and [GitHub Discussions](https://github.com/lacerbi/athanor/discussions).
+
+Thank you for exploring Athanor!
+
+:::
