@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Athanor!","permalink":"/blog/welcome-to-athanor","unlisted":false,"date":"2025-06-03T00:00:00.000Z"}]}')}}]);

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://athanor.works/blog</id>
     <title>Athanor - AI Workbench Blog</title>
-    <updated>2025-06-03T00:00:00.000Z</updated>
+    <updated>2025-06-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://athanor.works/blog"/>
     <subtitle>Athanor - AI Workbench Blog</subtitle>
@@ -11,9 +11,9 @@
         <title type="html"><![CDATA[Welcome to Athanor!]]></title>
         <id>https://athanor.works/blog/welcome-to-athanor</id>
         <link href="https://athanor.works/blog/welcome-to-athanor"/>
-        <updated>2025-06-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I am excited to finally share the pre-alpha release of Athanor - AI Workbench together with this new website.]]></summary>
-        <content type="html"><![CDATA[<p>I am excited to finally share the pre-alpha release of <a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer">Athanor - AI Workbench</a> together with this new website.</p>
+        <updated>2025-06-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I am excited to finally share the alpha release of Athanor - AI Workbench together with this new website.]]></summary>
+        <content type="html"><![CDATA[<p>I am excited to finally share the alpha release of <a href="https://github.com/lacerbi/athanor" target="_blank" rel="noopener noreferrer">Athanor - AI Workbench</a> together with this new website.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-athanor">What is Athanor?<a href="https://athanor.works/blog/welcome-to-athanor#what-is-athanor" class="hash-link" aria-label="Direct link to What is Athanor?" title="Direct link to What is Athanor?">​</a></h2>
 <p>Athanor is a desktop app that sits between you and your AI assistant (ChatGPT, Claude, Gemini, etc.). Think of it as a workbench with a set of tools and knobs to make AI workflow actually practical. Athanor helps you:</p>
 <ul>
@@ -35,13 +35,13 @@
 </ul>
 </li>
 </ul>
-<p>Also, having already multiple AI subscriptions, I wasn't too keen on switching to a pure API workflow.</p>
+<p>Also, having already multiple AI subscriptions, I wasn't too keen on switching to a pure API workflow or token-hungry AI coding agents (not yet at least).</p>
 <p><strong>That's how Athanor began.</strong> And now, after months of using it to build itself, I'm ready to share it with you.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-on-this-website">What's on This Website<a href="https://athanor.works/blog/welcome-to-athanor#whats-on-this-website" class="hash-link" aria-label="Direct link to What's on This Website" title="Direct link to What's on This Website">​</a></h2>
 <p>I have put together documentation that covers what I thought would be useful for a newcomer. Yes, of course I have used Athanor and various AI assistants to help me with this (but this is me writing, working from an excessively salesman-y draft of this post).</p>
 <p>Most importantly, <a href="https://athanor.works/docs/tutorial/introduction"><strong>the Tutorial</strong></a> takes you from installation to your first real workflow. It goes from basic prompts to customizing your Athanor experience to your specific needs.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="where-were-at">Where We're At<a href="https://athanor.works/blog/welcome-to-athanor#where-were-at" class="hash-link" aria-label="Direct link to Where We're At" title="Direct link to Where We're At">​</a></h2>
-<p>Athanor is in <strong>pre-alpha</strong>. What does that mean practically?</p>
+<p>Athanor is in <strong>alpha</strong>. What does that mean practically?</p>
 <ul>
 <li>It works. I have been using it daily for months (including to build Athanor itself from <code>v0.1.0</code>)</li>
 <li>There are rough edges. Sometimes you'll hit a weird bug</li>
