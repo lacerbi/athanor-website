@@ -75,9 +75,9 @@ Once Athanor launches, you're ready to begin the tutorial!
 
 Athanor is an open-source project. You're welcome to explore the [codebase on GitHub](https://github.com/lacerbi/athanor).
 
-:::warning 🚧 **PRE-ALPHA SOFTWARE**: 🚧
+:::warning 🚧 **ALPHA SOFTWARE**: 🚧
 
-Please be aware that Athanor is currently in a **pre-alpha stage**. This means the application is under active development. Features described here may evolve, and you might encounter some rough edges or bugs.
+Please be aware that Athanor is currently in an **alpha stage**. This means the application is under active development. Features described here may evolve, and you might encounter some rough edges or bugs.
 
 Your feedback is incredibly valuable as we refine both the application and this tutorial. Please report any issues or share your thoughts via [GitHub Issues](https://github.com/lacerbi/athanor/issues) and [GitHub Discussions](https://github.com/lacerbi/athanor/discussions).
 

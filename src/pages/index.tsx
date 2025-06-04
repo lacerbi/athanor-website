@@ -59,9 +59,13 @@ function HomepageHeader({ onImageClick }: { onImageClick: () => void }) {
             className={styles.heroImage}
             title="Athanor AI Workbench Demo"
           >
-            <source src="/video/athanor-demo-av1.mp4" type='video/mp4; codecs="av01.0.05M.08"' />
+            <source
+              src="/video/athanor-demo-av1.mp4"
+              type='video/mp4; codecs="av01.0.05M.08"'
+            />
             <source src="/video/athanor-demo-x264.mp4" type="video/mp4" />
-            Your browser does not support the video tag. Consider upgrading to a newer browser.
+            Your browser does not support the video tag. Consider upgrading to a
+            newer browser.
           </video>
         </div>
       </div>
@@ -228,7 +232,7 @@ export default function Home(): ReactNode {
             <Heading as="h2">Community and Feedback</Heading>
             <p className={styles.sectionText}>
               Athanor is <strong>open source</strong> and you can explore its
-              codebase on GitHub. In this pre-alpha development phase, your
+              codebase on GitHub. In this alpha development phase, your
               feedback, bug reports, and feature ideas are crucial!
             </p>
             <div className={styles.feedbackLinks}>

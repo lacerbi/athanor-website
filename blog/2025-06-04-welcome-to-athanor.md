@@ -7,7 +7,7 @@ tags: [athanor, announcement, development]
 
 # Welcome to Athanor! 🎉
 
-I am excited to finally share the pre-alpha release of [Athanor - AI Workbench](https://github.com/lacerbi/athanor) together with this new website.
+I am excited to finally share the alpha release of [Athanor - AI Workbench](https://github.com/lacerbi/athanor) together with this new website.
 
 <!-- truncate -->
 
@@ -32,7 +32,7 @@ Athanor was born out of my frustration with using standard chat interfaces for A
   - When the AI outputs just a snippet, you need to manually copy-paste it at exactly the right place
   - When the AI outputs the entire file, it sometimes messes up or _forgets_ something else along the way–and some files are just too large, so waiting for the full output is unwieldy
 
-Also, having already multiple AI subscriptions, I wasn't too keen on switching to a pure API workflow.
+Also, having already multiple AI subscriptions, I wasn't too keen on switching to a pure API workflow or token-hungry AI coding agents (not yet at least).
 
 **That's how Athanor began.** And now, after months of using it to build itself, I'm ready to share it with you.
 
@@ -44,7 +44,7 @@ Most importantly, [**the Tutorial**](/docs/tutorial/introduction) takes you from
 
 ## Where We're At
 
-Athanor is in **pre-alpha**. What does that mean practically?
+Athanor is in **alpha**. What does that mean practically?
 
 - It works. I have been using it daily for months (including to build Athanor itself from `v0.1.0`)
 - There are rough edges. Sometimes you'll hit a weird bug
