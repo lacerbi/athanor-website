@@ -62,12 +62,11 @@ Follow these steps if **Node.js** is not installed in your system.
 
 If you haven't installed Athanor yet, follow these steps:
 
-1. **Clone the repository**: `git clone https://github.com/lacerbi/athanor.git`
-   - Or simply [**download it**](https://github.com/lacerbi/athanor/archive/refs/heads/llm-api-calls.zip)
-2. **Navigate to the project directory**: `cd athanor`
-3. **Install dependencies**: `npm install`
-4. **Run the application**: `npm run dev`
-   - You can also compile it into an executable with `npm run package`
+1. **Run the command-line installer**: `npx setup-athanor`
+   - This will clone/download Athanor in the `athanor` subfolder from where you run it
+2. **Navigate to the Athanor directory**: `cd athanor`
+3. **Run the application**: `npm start`
+   - You can also compile Athanor into an executable with `npm run package`
 
 Once Athanor launches, you're ready to begin the tutorial!
 

@@ -58,9 +58,9 @@ Your feedback at this stage is gold. If something is annoying or broken, please 
 Right now, Athanor runs in developer mode:
 
 ```bash
-git clone https://github.com/lacerbi/athanor.git
-cd athanor && npm install
-npm run dev
+npx setup-athanor
+cd athanor
+npm start
 ```
 
 ## What's Coming

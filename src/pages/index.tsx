@@ -206,15 +206,10 @@ export default function Home(): ReactNode {
                 v18.x+)
               </div>
               <div className={styles.installationStep}>
-                <strong>1. Clone:</strong>{" "}
-                <code>git clone https://github.com/lacerbi/athanor.git</code>
+                <strong>1. Setup:</strong> <code>npx setup-athanor</code>
               </div>
               <div className={styles.installationStep}>
-                <strong>2. Install:</strong>{" "}
-                <code>cd athanor && npm install</code>
-              </div>
-              <div className={styles.installationStep}>
-                <strong>3. Run:</strong> <code>npm run dev</code>
+                <strong>2. Run:</strong> <code>cd athanor && npm start</code>
               </div>
             </div>
             <p className={styles.sectionText}>
