@@ -12,7 +12,6 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import athanorSnapshotImageUrl from "@site/static/img/athanor_snapshot.png";
 import athanorSnapshotApplyChangesImageUrl from "@site/static/img/athanor_snapshot_apply_changes.png";
-import athanorIntroImageUrl from "@site/static/img/athanor_intro.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
@@ -79,11 +78,6 @@ export default function Home(): ReactNode {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const slides = [
-    {
-      src: athanorIntroImageUrl,
-      alt: "Athanor Introduction Screenshot",
-      title: "Athanor - Overview of the AI Workbench interface",
-    },
     {
       src: athanorSnapshotImageUrl,
       alt: "Athanor Interface: File explorer and prompt generation",
