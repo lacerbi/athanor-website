@@ -23,14 +23,14 @@ Athanor is a desktop application that integrates AI coding assistants into a dev
 1.  **Dynamic File Explorer**
 
     - Displays a tree of the chosen project directory.
-    - Tracks file line counts (for text files) and uses `.athignore` rules to hide excluded paths.
+    - Tracks file line counts (for text files) and uses ignore rules to hide excluded paths.
     - Allows multi-select of files and folders; selecting a folder auto-selects its descendants unless hidden.
     - Automatically updates when files are added or removed on disk (Chokidar watchers).
 
 2.  **Ignore Rules Management**
 
-    - `.athignore` is the primary ignore file used within Athanor.
-    - Rules can be seeded from `.gitignore` during initial setup, ensuring minimal duplication.
+    - By default, Athanor automatically processes rules from the project's `.gitignore` file. This behavior can be toggled in the project settings.
+    - The `.athignore` file is used for Athanor-specific ignore rules or for overriding `.gitignore` rules (e.g., re-including a file with an exception rule like `!path/to/file`).
     - The main process (via `ignoreRulesManager.ts`) uses the `ignore` library to handle advanced wildcard matching, including an 'ignore all by name' option available via the file explorer's context menu.
 
 3.  **Task & Prompt Management**
@@ -39,6 +39,7 @@ Athanor is a desktop application that integrates AI coding assistants into a dev
       - A **task description**: plain-text or markdown instructions.
       - An **AI output** area: displays the generated prompt for the user to copy.
       - A **context** field: for ephemeral data (like partial commit messages or specific instructions); includes context suggestions based on task content (`contextDetection.ts`).
+      - A **selected files list** which lists selected files in order of relevance; note that separate task tabs have distinct selected files lists.
     - Prompt (`prompt_*.xml`) and Task (`task_*.xml`) templates live in `resources/prompts/` and are loaded on application startup via `promptService.ts`.
     - The user can dynamically switch between prompt/task _variants_ (e.g., different modes like “Query,” “Coder,” “Architect” or task variations like “Default”, “LaTeX”) using context menus in the Action Panel (`PromptContextMenu.tsx`, `TaskContextMenu.tsx`).
 
@@ -49,9 +50,8 @@ Athanor is a desktop application that integrates AI coding assistants into a dev
 
 5.  **Project Setup & Supplementary Materials**
 
-    - On folder selection, Athanor can create a `.athignore` file if it does not exist.
+    - On folder selection, Athanor prompts to create a default `.athignore` file if one does not exist.
     - A hidden `.ath_materials` folder is automatically created to store extra references (like doc fragments).
-    - If `.gitignore` exists, its rules can be merged in as an optional step.
 
 6.  **User Interface Layout**
 

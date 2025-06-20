@@ -19,42 +19,39 @@ Choose any folder containing code, documentation, or files you want to work with
 
 ## Ignore File Configuration
 
-After selecting your folder, Athanor may present you with configuration options:
+Athanor filters files using both `.gitignore` and its own `.athignore` file. This keeps your workspace clean and ensures prompts contain only relevant content.
 
-### Creating `.athignore`
+### How It Works
 
-If your project doesn't have an `.athignore` file (Athanor's specific ignore file), a dialog will appear with options:
+- **`.gitignore`**: By default, Athanor automatically respects the rules in your project's `.gitignore` file. You can disable this behavior in the **Settings** tab.
+- **`.athignore`**: This file is used for Athanor-specific rules or to override `.gitignore`. For example, you can re-include a file ignored by `.gitignore` using an exception rule like `!path/to/file`.
 
-- **Create default `.athignore` file**: Includes common rules for files and directories like:
+### Initial Project Setup
 
-  - `node_modules/`
-  - `.git/`
-  - `.DS_Store`
-  - `*.log`
-  - Build artifacts and temporary files
+When you first select a project folder, Athanor helps you configure your ignore settings:
 
-- **Importing from `.gitignore`**: If a `.gitignore` file exists in your project, you'll have the option to **import its rules** into the new `.athignore` file. This helps maintain consistency with your existing project exclusions.
+- If a `.gitignore` file is present, its rules are applied automatically.
+- If your project does not have an `.athignore` file, a dialog will appear offering to create a default one. This is recommended and includes common rules for files like `node_modules/`, `.git/`, and build artifacts.
 
-:::info What is an `.athignore` file?
-The `.athignore` file is specific to Athanor and plays a crucial role in managing your project's visibility within the application. It tells Athanor which files and folders to exclude from Athanor's File Explorer and from being considered during prompt generation.
+:::info What is the `.athignore` file?
+The `.athignore` file gives you fine-grained control over file visibility within Athanor without modifying your project's main `.gitignore`.
 
 Key characteristics:
 
-- **Primary Ignore File**: It's the main way Athanor filters project content.
-- **Gitignore-like Syntax**: It uses rules similar to `.gitignore` for pattern matching (e.g., `node_modules/`, `*.log`, `build/`). Advanced wildcard matching is supported.
-- **Purpose**: To keep your Athanor workspace clean and focused by hiding irrelevant files, build artifacts, or sensitive directories, ensuring that only relevant content is included in AI prompts.
+- **Role**: It works alongside `.gitignore` to filter the project. Use it for Athanor-specific rules or to override `.gitignore` rules.
+- **Gitignore-like Syntax**: It uses the same pattern matching as `.gitignore` (e.g., `node_modules/`, `*.log`, `build/`) and supports advanced wildcards.
+- **Purpose**: To hide irrelevant files, build artifacts, or sensitive directories, keeping your Athanor workspace focused.
 
-**If a file or folder located in your project does not show in Athanor's file manager, it is likely because of an `.athignore` rule.** This is normally a desired behavior, but there might be rare cases where you want to see a usually ignored file–edit the `.athignore` as appropriate.
-
+**If a file or folder does not appear in Athanor's file explorer, it is likely due to a rule in either `.gitignore` or `.athignore`.** You can edit the appropriate file to adjust visibility.
 :::
 
 ## Project Scanning
 
-Once the folder is selected and the `.athignore` file is configured:
+Once the folder is selected:
 
-1. Athanor will scan your project files
-2. Files and folders listed in `.athignore` will **not** appear in the File Explorer
-3. The file tree will be displayed in the **File Explorer** on the left panel
+1. Athanor scans your project directory.
+2. Files and folders matching rules in `.gitignore` (if enabled) and `.athignore` will **not** appear in the File Explorer.
+3. The filtered file tree is displayed in the **File Explorer** on the left panel
 
 ## Supplementary Materials
 
